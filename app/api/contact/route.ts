@@ -3,7 +3,7 @@ import { Resend } from "resend";
 
 export const dynamic = "force-dynamic";
 
-const resend = new Resend(process.env.RESEND_API_KEY!);
+const resend = new Resend(process.env.RESEND_API_KEY || "fallback_key_for_build");
 const CONTACT_EMAIL = process.env.CONTACT_EMAIL || "info@apacworldwide.com";
 
 function buildNotificationHtml(data: {
