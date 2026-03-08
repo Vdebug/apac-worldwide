@@ -115,24 +115,6 @@ export default function Hero() {
           </motion.div>
         </div>
       </motion.div>
-      {/* Animated Scroll Arrow */}
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 hidden sm:flex"
-      >
-        <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#c5a059]/60">
-          Discover
-        </span>
-        <motion.div
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
-          className="flex h-10 w-6 items-center justify-center rounded-full border border-white/20 bg-white/5 backdrop-blur-md"
-        >
-          <div className="h-1.5 w-1.5 rounded-full bg-[#c5a059]" />
-        </motion.div>
-      </motion.div>
     </section>
   );
 }

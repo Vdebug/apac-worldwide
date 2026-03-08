@@ -1,5 +1,5 @@
 export const siteUrl =
-  process.env.NEXT_PUBLIC_SITE_URL || "https://www.apacworldwide.com";
+  process.env.NEXT_PUBLIC_SITE_URL || "https://apacworldwide.com";
 
 export const siteConfig = {
   name: "APAC Worldwide",

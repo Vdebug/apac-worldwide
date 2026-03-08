@@ -44,7 +44,7 @@ export default function Navbar() {
               width={136}
               height={101}
               priority
-              className={`h-10 w-auto sm:h-12 object-contain transition-all duration-500 ${solid ? "opacity-100" : "opacity-90 contrast-125 brightness-110"}`}
+              className={`h-10 w-auto sm:h-12 object-contain transition-all duration-500 ${solid ? "opacity-100" : "brightness-0 invert opacity-100"}`}
             />
           </Link>
 
