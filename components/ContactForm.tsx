@@ -118,11 +118,10 @@ export default function ContactForm() {
           </div>
           <h3 className="font-serif text-[2rem] sm:text-[2.5rem] font-light text-white mb-4">Request Received</h3>
           <p className="text-[15px] font-light leading-relaxed text-white/70 max-w-md mx-auto">
-            We have received your submission successfully. Please check your email for a confirmation from{" "}
-            <span className="text-[#c5a059] font-medium">info@apacworldwide.com</span>.
+            We have received your submission successfully. Our team will contact you shortly to schedule your consultation.
           </p>
           <p className="mt-4 text-[13px] font-light leading-relaxed text-white/50 max-w-md mx-auto">
-            If you don&apos;t see it in your inbox, please check your spam or promotions folder. Our team will reach out to you within one business day using this email channel.
+            All future communication will come through <span className="text-[#c5a059] font-medium">info@apacworldwide.com</span>. Please ensure you monitor this channel.
           </p>
           <button
             type="button"

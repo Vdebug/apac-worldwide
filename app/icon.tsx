@@ -22,20 +22,19 @@ export default function Icon() {
           borderRadius: '8px',
         }}
       >
-        <div
-          style={{
-            fontSize: 16,
-            fontWeight: 700,
-            fontFamily: 'serif',
-            color: '#c5a059',
-            letterSpacing: '-1px',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#c5a059"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         >
-          AW
-        </div>
+          {/* Dubai Tower / Burj Khalifa Silhouette */}
+          <path d="M12 2v20M10 10l2-2 2 2v12h-4zM11 6h2M10.5 14h3M9 18h6" />
+        </svg>
       </div>
     ),
     {
