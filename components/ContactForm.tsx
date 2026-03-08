@@ -95,9 +95,10 @@ export default function ContactForm() {
 
         const result = await response.json();
 
-        if (!response.ok || result.success !== "true") {
+        if (!response.ok || (result.success !== "true" && result.success !== true)) {
+          console.error("FormSubmit Error:", result);
           setSubmitted(false);
-          setServerMessage("Something went wrong with the delivery. Please try again.");
+          setServerMessage(result.message || "Something went wrong with the delivery. Please try again.");
           return;
         }
 
