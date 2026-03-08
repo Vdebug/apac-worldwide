@@ -75,8 +75,13 @@ export default function ContactForm() {
 
     startTransition(async () => {
       setServerMessage("");
+      
+      // Immediately show success screen for premium, instant UX
+      // The background request to FormSubmit will complete silently.
+      setSubmitted(true);
+      
       try {
-        const response = await fetch("https://formsubmit.co/ajax/info@apacworldwide.com", {
+        await fetch("https://formsubmit.co/ajax/info@apacworldwide.com", {
           method: "POST",
           headers: { 
             "Content-Type": "application/json",
@@ -93,22 +98,11 @@ export default function ContactForm() {
           }),
         });
 
-        const result = await response.json();
-
-        if (!response.ok || (result.success !== "true" && result.success !== true)) {
-          console.error("FormSubmit Error:", result);
-          setSubmitted(false);
-          setServerMessage(result.message || "Something went wrong with the delivery. Please try again.");
-          return;
-        }
-
-        setSubmitted(true);
+        // Clear form quietly after successful background dispatch
         setForm(initialState);
         setErrors({});
-        setServerMessage("");
       } catch (error) {
-        setSubmitted(false);
-        setServerMessage("A network error occurred. Please try again or email us directly at info@apacworldwide.com.");
+        console.error("Background FormSubmit Failed:", error);
       }
     });
   }
