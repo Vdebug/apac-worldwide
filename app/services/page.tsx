@@ -71,7 +71,7 @@ export default function ServicesPage() {
         eyebrow="Services"
         title="Integrated setup support from first decision to launch readiness"
         description="Our service model is designed to connect authority approvals, residency, compliance, and banking preparation into one coherent launch path."
-        primaryCta={{ href: "/contact", label: "Request a tailored plan" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Request a tailored plan" }}
         secondaryCta={{ href: "/blog", label: "Read market guides" }}
         stats={[
           { label: "Coverage", value: "Formation through compliance" },
@@ -124,7 +124,7 @@ export default function ServicesPage() {
                       ))}
                     </ul>
                     <Link
-                      href="/contact"
+                      href="/contact#contact-form"
                       className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-teal transition-colors hover:text-gold"
                     >
                       Discuss this service
@@ -218,7 +218,7 @@ export default function ServicesPage() {
         eyebrow="Ready to move"
         title="Need a service plan that fits your activity, team size, and timeline"
         description="We can turn your current requirements into a clear launch sequence with realistic next steps."
-        primaryCta={{ href: "/contact", label: "Request your plan" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Request your plan" }}
         secondaryCta={{ href: "/blog", label: "Read setup guides" }}
       />
       <Footer />

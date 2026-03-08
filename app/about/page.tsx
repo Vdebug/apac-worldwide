@@ -47,7 +47,7 @@ export default function AboutPage() {
         eyebrow="About APAC"
         title="Built for founders who need a practical route into the UAE"
         description="We combine commercial thinking with detailed execution so setup decisions support the business long after the first license is issued."
-        primaryCta={{ href: "/contact", label: "Speak with the team" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Speak with the team" }}
         secondaryCta={{ href: "/services", label: "Explore services" }}
         stats={[
           { label: "Core market", value: "Dubai and wider UAE" },
@@ -62,7 +62,7 @@ export default function AboutPage() {
         eyebrow="Next step"
         title="Need a team that can handle setup and the work that follows"
         description="We can help with the first launch plan, the filing sequence, and the finance and compliance work that comes after approval."
-        primaryCta={{ href: "/contact", label: "Start your plan" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Start your plan" }}
         secondaryCta={{ href: "/blog", label: "Read founder guides" }}
       />
       <Footer />

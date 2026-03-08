@@ -242,7 +242,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         eyebrow="Need a tailored answer"
         title="Turn the research into a launch plan that fits your business"
         description="If you want advice shaped around your activity, market, and team model, we can map the next steps with you."
-        primaryCta={{ href: "/contact", label: "Speak with an advisor" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Speak with an advisor" }}
       />
       <Footer />
     </>

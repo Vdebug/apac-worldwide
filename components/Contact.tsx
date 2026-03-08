@@ -105,6 +105,7 @@ export default function Contact() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="lg:col-span-3"
+            id="contact-form"
           >
             <ContactForm />
           </motion.div>

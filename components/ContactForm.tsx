@@ -108,7 +108,7 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="rounded-[40px] border border-[#11352a]/20 bg-[#05120e] p-10 text-center shadow-2xl lg:p-14 h-full flex flex-col justify-center items-center relative overflow-hidden">
+      <div className="rounded-[28px] sm:rounded-[40px] border border-[#11352a]/20 bg-[#05120e] p-8 sm:p-10 text-center shadow-2xl lg:p-14 h-full flex flex-col justify-center items-center relative overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,#11352a_0%,transparent_80%)] opacity-30" />
         <div className="relative z-10">
           <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-[#11352a] shadow-inner mb-8 text-[#c5a059]">
@@ -116,16 +116,20 @@ export default function ContactForm() {
               <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
             </svg>
           </div>
-          <h3 className="font-serif text-[2.5rem] font-light text-white mb-4">Message Received</h3>
-          <p className="text-[15px] font-light leading-relaxed text-white/60 max-w-sm mx-auto">
-            Your request has been securely dispatched. An architect from our team will reply within one business day.
+          <h3 className="font-serif text-[2rem] sm:text-[2.5rem] font-light text-white mb-4">Request Received</h3>
+          <p className="text-[15px] font-light leading-relaxed text-white/70 max-w-md mx-auto">
+            We have received your submission successfully. Please check your email for a confirmation from{" "}
+            <span className="text-[#c5a059] font-medium">info@apacworldwide.com</span>.
+          </p>
+          <p className="mt-4 text-[13px] font-light leading-relaxed text-white/50 max-w-md mx-auto">
+            If you don&apos;t see it in your inbox, please check your spam or promotions folder. Our team will reach out to you within one business day using this email channel.
           </p>
           <button
             type="button"
             onClick={() => setSubmitted(false)}
             className="group relative mt-10 inline-flex h-12 items-center justify-center gap-2 overflow-hidden rounded-full border border-white/20 bg-transparent px-8 text-sm font-semibold text-white transition-all hover:bg-white/10"
           >
-            <span>Submit Another</span>
+            <span>Submit Another Request</span>
           </button>
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function BlogPage() {
         eyebrow="Blog"
         title="High intent UAE setup guides for founders and operators"
         description="Every article is designed to answer the questions founders search before they choose a jurisdiction, budget, visa path, or finance setup."
-        primaryCta={{ href: "/contact", label: "Talk to an advisor" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Talk to an advisor" }}
         secondaryCta={{ href: "/services", label: "See service coverage" }}
         stats={[
           { label: "Topics", value: "Cost, structure, visa, tax, banking" },
@@ -79,7 +79,7 @@ export default function BlogPage() {
         eyebrow="Need a tailored answer"
         title="Your setup plan should fit your business, not a generic package"
         description="If the blog helped surface the right questions, we can turn those into a practical launch path for your specific business."
-        primaryCta={{ href: "/contact", label: "Request your plan" }}
+        primaryCta={{ href: "/contact#contact-form", label: "Request your plan" }}
       />
       <Footer />
     </>

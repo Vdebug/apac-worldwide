@@ -989,8 +989,8 @@ export const blogPosts: BlogPost[] = [
     category: "Cross border",
     readTime: "10 min read",
     image:
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "India Gate with city skyline representing India business",
+      "https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "International business handshake representing India UAE trade corridor",
     publishedAt: "2026-03-08",
     updatedAt: "2026-03-08",
     excerpt:
@@ -1075,8 +1075,8 @@ export const blogPosts: BlogPost[] = [
     category: "Real estate",
     readTime: "9 min read",
     image:
-      "https://images.unsplash.com/photo-1582407947092-984264f1ebaf?auto=format&fit=crop&w=1400&q=80",
-    imageAlt: "Luxury Dubai Marina waterfront properties",
+      "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1400&q=80",
+    imageAlt: "Modern luxury villa with pool representing UAE real estate",
     publishedAt: "2026-03-08",
     updatedAt: "2026-03-08",
     excerpt:

@@ -84,7 +84,7 @@ export default function Hero() {
             className="mt-12 flex flex-col items-center justify-center gap-5 sm:flex-row w-full sm:w-auto"
           >
             <Link 
-              href="/contact" 
+              href="/contact#contact-form" 
               className="group relative flex h-14 w-full sm:w-auto items-center justify-center gap-3 overflow-hidden rounded-full bg-[#c5a059] px-10 text-[15px] font-bold text-[#05120e] transition-all hover:bg-[#d6b779] hover:scale-[1.02]"
             >
               <span>Begin Your Setup</span>

@@ -64,7 +64,7 @@ export default function About() {
                 <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
               </Link>
               <Link 
-                href="/contact" 
+                href="/contact#contact-form" 
                 className="group flex h-14 items-center justify-center gap-3 rounded-full border border-[#05120e]/20 px-10 text-[14px] font-semibold text-[#05120e] transition-all hover:border-[#05120e] hover:bg-[#05120e]/5"
               >
                 <span>Talk to an Advisor</span>
