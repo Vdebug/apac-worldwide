@@ -75,24 +75,40 @@ export default function ContactForm() {
 
     startTransition(async () => {
       setServerMessage("");
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      try {
+        const response = await fetch("https://formsubmit.co/ajax/info@apacworldwide.com", {
+          method: "POST",
+          headers: { 
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+          },
+          body: JSON.stringify({
+            _subject: `APAC Worldwide Lead: ${form.name} — ${form.service}`,
+            _template: "table",
+            "Full Name": form.name,
+            "Email Address": form.email,
+            "Mobile Number": form.phone,
+            "Service Interest": form.service,
+            "Project Overview": form.message || "Not provided",
+          }),
+        });
 
-      const result = (await response.json()) as { ok: boolean; message?: string };
+        const result = await response.json();
 
-      if (!response.ok || !result.ok) {
+        if (!response.ok || result.success !== "true") {
+          setSubmitted(false);
+          setServerMessage("Something went wrong with the delivery. Please try again.");
+          return;
+        }
+
+        setSubmitted(true);
+        setForm(initialState);
+        setErrors({});
+        setServerMessage("");
+      } catch (error) {
         setSubmitted(false);
-        setServerMessage(result.message || "Something went wrong. Please try again.");
-        return;
+        setServerMessage("A network error occurred. Please try again or email us directly at info@apacworldwide.com.");
       }
-
-      setSubmitted(true);
-      setForm(initialState);
-      setErrors({});
-      setServerMessage("");
     });
   }
 
