@@ -51,12 +51,7 @@ export default function ContactForm() {
     }
 
     if (!values.service) nextErrors.service = "Select a service";
-    if (!values.message.trim()) {
-      nextErrors.message = "Message is required";
-    } else if (values.message.trim().length < 20) {
-      nextErrors.message = "Please add a little more detail";
-    }
-
+    
     return nextErrors;
   }
 
@@ -217,7 +212,7 @@ export default function ContactForm() {
 
         <div>
           <label htmlFor="message" className="mb-2.5 block text-[11px] font-bold uppercase tracking-[0.2em] text-white/70">
-            Project Overview
+            Project Overview <span className="text-white/40 normal-case tracking-normal font-medium">(Optional)</span>
           </label>
           <textarea
             id="message"

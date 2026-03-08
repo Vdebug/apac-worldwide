@@ -58,7 +58,7 @@ export async function POST(req: Request) {
     const body = await req.json();
     const { name, email, phone, service, message } = body;
 
-    if (!name || !email || !phone || !service || !message) {
+    if (!name || !email || !phone || !service) {
       return NextResponse.json(
         { ok: false, message: "Missing required fields" },
         { status: 400 }
@@ -80,14 +80,14 @@ export async function POST(req: Request) {
       from: "APAC Worldwide <onboarding@resend.dev>", // Using Resend testing domain for now until custom domain verified
       to: [CONTACT_EMAIL],
       subject: `New Lead: ${name} — ${service}`,
-      html: buildNotificationHtml({ name, email, phone, service, message }),
+      html: buildNotificationHtml({ name, email, phone, service, message: message || "No message provided" }),
       replyTo: email,
     });
 
     if (error) {
       console.error("Resend API Error:", error);
       return NextResponse.json(
-        { ok: false, message: "Failed to send email." },
+        { ok: false, message: `Resend Error: ${error.message}` },
         { status: 500 }
       );
     }
