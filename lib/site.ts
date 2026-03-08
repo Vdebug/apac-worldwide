@@ -6,7 +6,7 @@ export const siteConfig = {
   shortName: "APAC",
   title: "APAC Worldwide | UAE Business Setup and Corporate Services",
   description:
-    "Business setup, licensing, visa support, compliance, and growth advisory for companies entering the UAE market.",
+    "APAC Worldwide provides end-to-end business setup, corporate licensing, residency, and compliance services in Dubai and across the UAE. We help founders and enterprises architect their market entry for long-term scale and security.",
   url: siteUrl,
   email: "info@apacworldwide.com",
   office: "Dubai Silicon Oasis, Dubai, United Arab Emirates",
