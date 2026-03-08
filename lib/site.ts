@@ -9,7 +9,7 @@ export const siteConfig = {
     "Business setup, licensing, visa support, compliance, and growth advisory for companies entering the UAE market.",
   url: siteUrl,
   email: "info@apacworldwide.com",
-  office: "Business Bay, Dubai, United Arab Emirates",
+  office: "Dubai Silicon Oasis, Dubai, United Arab Emirates",
 };
 
 export const navigation = [

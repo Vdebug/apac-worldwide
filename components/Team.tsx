@@ -40,13 +40,13 @@ export default function Team() {
             <div className="bg-[#f8f8f5] p-8 sm:p-10 rounded-[2rem] border border-[#11352a]/5">
               <h4 className="text-xl font-bold text-charcoal mb-6 flex items-center gap-3">
                 <span className="h-6 w-1 bg-gold rounded-full inline-block"></span>
-                Professional Profile
+                Director
               </h4>
               <p className="leading-relaxed">
                 Chetan Gupta is a senior corporate and regulatory advisor with more than two decades of hands‑on advisory experience across Indian and international business environments. A Company Secretary, Advocate, Insolvency Professional, and Social Auditor, he specializes in corporate governance, compliance systems, legal structuring, and cross‑border expansion.
               </p>
               <p className="leading-relaxed mt-4">
-                He has resigned as Partner from APAC & Associates LLP (India) and is currently serving as <strong className="text-charcoal font-semibold">Director – UAE Operations at APAC Worldwide</strong>, leading the firm's UAE business setup and cross‑border advisory venture. In this role, he advises entrepreneurs, corporates, and family‑owned businesses on India–UAE business structuring, market entry strategies, regulatory compliance, and governance transformation.
+                He is currently serving as <strong className="text-charcoal font-semibold">Director – UAE Operations at APAC Worldwide</strong>, leading the firm's UAE business setup and cross‑border advisory venture. In this role, he advises entrepreneurs, corporates, and family‑owned businesses on India–UAE business structuring, market entry strategies, regulatory compliance, and governance transformation.
               </p>
               <p className="leading-relaxed mt-4 bg-white p-6 rounded-2xl border border-neutral-100 shadow-sm mt-8">
                 <span className="block text-[#11352a] font-medium italic text-xl font-serif mb-2">&quot;</span>
