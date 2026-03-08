@@ -22,7 +22,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#05120e] pt-20">
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-[#05120e] px-0 pt-20 pb-24 sm:pb-8">
       {/* Background Ambience */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,#11352a_0%,transparent_70%)] opacity-60" />
       <div className="absolute top-0 right-0 w-[40vw] h-[40vw] bg-[#c5a059] opacity-[0.03] blur-[120px] rounded-full mix-blend-screen" />
@@ -65,7 +65,7 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center">
           <motion.h1 
             variants={item}
-            className="font-serif text-[clamp(3.2rem,8vw,7.5rem)] font-light leading-[0.9] tracking-tight text-white mb-8"
+            className="font-serif text-[clamp(2.4rem,8vw,7.5rem)] font-light leading-[0.95] tracking-tight text-white mb-6 sm:mb-8"
           >
             Launch with <br />
             <span className="font-medium italic text-[#c5a059]">Absolute Clarity</span>
@@ -73,7 +73,7 @@ export default function Hero() {
 
           <motion.p 
             variants={item}
-            className="max-w-2xl text-lg font-light leading-relaxed text-white/70 sm:text-xl"
+            className="max-w-2xl text-base font-light leading-relaxed text-white/70 sm:text-xl px-2 sm:px-0"
           >
             APAC Worldwide connects elite founders to seamless company formation, 
             licensing, and deep compliance in the Emirates. Focused on growth, architected for scale.
@@ -101,7 +101,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Trust Indicators */}
-          <motion.div variants={item} className="mt-20 flex flex-col items-center gap-6 border-t border-white/10 pt-10 sm:flex-row sm:gap-12 w-full justify-center">
+          <motion.div variants={item} className="mt-10 sm:mt-20 flex flex-col items-center gap-4 sm:gap-6 border-t border-white/10 pt-8 sm:pt-10 sm:flex-row sm:gap-12 w-full justify-center">
             {[
               "Mainland & Free Zone",
               "End-to-end Compliance",
@@ -120,7 +120,7 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
+        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 hidden sm:flex"
       >
         <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#c5a059]/60">
           Discover

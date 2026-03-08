@@ -39,7 +39,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
   }, [started, target]);
 
   return (
-    <div ref={ref} className="font-serif text-4xl lg:text-5xl font-semibold text-white">
+    <div ref={ref} className="font-serif text-3xl sm:text-4xl lg:text-5xl font-semibold text-white">
       {count.toLocaleString()}<span className="text-gold">{suffix}</span>
     </div>
   );
@@ -48,7 +48,7 @@ function Counter({ target, suffix }: { target: number; suffix: string }) {
 export default function Stats() {
   return (
     <section
-      className="relative overflow-hidden py-24"
+      className="relative overflow-hidden py-14 sm:py-24"
       style={{ background: "linear-gradient(135deg, #1f514c 0%, #0f2b28 100%)" }}
     >
       <svg className="absolute inset-0 w-full h-full opacity-[0.04]" xmlns="http://www.w3.org/2000/svg">

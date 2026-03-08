@@ -23,7 +23,7 @@ export default function FAQ({
   const items = typeof limit === "number" ? faqs.slice(0, limit) : faqs;
 
   return (
-    <section id="faq" className="bg-neutral-50 py-28 lg:py-36">
+    <section id="faq" className="bg-neutral-50 py-16 sm:py-28 lg:py-36">
       <div className="mx-auto max-w-3xl px-6 lg:px-8">
         <Reveal>
           <SectionIntro
@@ -39,7 +39,7 @@ export default function FAQ({
             <Reveal
               key={faq.question}
               delayClass={`stagger-${Math.min(index + 1, 6)}`}
-              className={`rounded-[24px] border transition-all duration-300 ${
+              className={`rounded-[18px] sm:rounded-[24px] border transition-all duration-300 ${
                 openIndex === index
                   ? "border-neutral-200 bg-white shadow-[0_4px_20px_rgba(0,0,0,0.04)]"
                   : "border-neutral-100 bg-white/60 hover:border-neutral-200"
@@ -47,7 +47,7 @@ export default function FAQ({
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex w-full items-center justify-between p-6 text-left"
+                className="flex w-full items-center justify-between p-4 sm:p-6 text-left"
                 aria-expanded={openIndex === index}
               >
                 <span

@@ -22,7 +22,7 @@ export default function PageHero({
 }: PageHeroProps) {
   return (
     <section
-      className="relative overflow-hidden px-6 pb-18 pt-32 text-white lg:px-8 lg:pb-24 lg:pt-40"
+      className="relative overflow-hidden px-6 pb-14 pt-28 text-white sm:pb-18 sm:pt-32 lg:px-8 lg:pb-24 lg:pt-40"
       style={{ background: "linear-gradient(160deg, #1f514c 0%, #163d39 42%, #0f2b28 100%)" }}
     >
       <svg className="absolute inset-0 h-full w-full opacity-[0.06]" xmlns="http://www.w3.org/2000/svg">
@@ -37,7 +37,7 @@ export default function PageHero({
       <div className="relative z-10 mx-auto max-w-7xl">
         <div className="max-w-4xl">
           <Reveal className="section-label-light">{eyebrow}</Reveal>
-          <Reveal as="h1" delayClass="stagger-1" className="mt-6 font-serif text-[clamp(2.75rem,6vw,5rem)] font-medium leading-[1.05] tracking-tight">
+          <Reveal as="h1" delayClass="stagger-1" className="mt-4 sm:mt-6 font-serif text-[clamp(2rem,6vw,5rem)] font-medium leading-[1.1] tracking-tight">
             {title}
           </Reveal>
           <Reveal
@@ -73,7 +73,7 @@ export default function PageHero({
         {stats.length ? (
           <Reveal
             delayClass="stagger-4"
-            className="mt-14 grid gap-4 rounded-[28px] border border-white/10 bg-white/[0.06] p-3 backdrop-blur-sm sm:grid-cols-2 lg:mt-18 lg:grid-cols-4"
+            className="mt-10 sm:mt-14 grid gap-3 sm:gap-4 rounded-[20px] sm:rounded-[28px] border border-white/10 bg-white/[0.06] p-3 backdrop-blur-sm sm:grid-cols-2 lg:mt-18 lg:grid-cols-4"
           >
             {stats.map((item) => (
               <div

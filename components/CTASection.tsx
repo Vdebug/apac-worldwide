@@ -20,14 +20,14 @@ export default function CTASection({
   secondaryCta,
 }: CTASectionProps) {
   return (
-    <section className="bg-[var(--color-bg-base)] px-6 py-24 lg:px-8 lg:py-28">
+    <section className="bg-[var(--color-bg-base)] px-4 py-16 sm:px-6 sm:py-24 lg:px-8 lg:py-28">
       <div className="mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="relative overflow-hidden rounded-[40px] border border-[#11352a]/20 bg-[#05120e] px-8 py-16 text-white sm:px-10 lg:px-20 lg:py-20 shadow-2xl"
+          className="relative overflow-hidden rounded-[24px] sm:rounded-[40px] border border-[#11352a]/20 bg-[#05120e] px-6 py-12 text-white sm:px-10 sm:py-16 lg:px-20 lg:py-20 shadow-2xl"
         >
           {/* Subtle Ambient Background */}
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,#11352a_0%,transparent_80%)] opacity-30" />
@@ -41,15 +41,15 @@ export default function CTASection({
               {eyebrow}
             </span>
             
-            <h2 className="mt-8 font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-light leading-[1.05] tracking-tight">
+            <h2 className="mt-6 sm:mt-8 font-serif text-[clamp(1.8rem,5vw,4.5rem)] font-light leading-[1.1] tracking-tight">
               {title}
             </h2>
             
-            <p className="mx-auto mt-6 max-w-2xl text-[17px] font-light leading-relaxed text-white/60">
+            <p className="mx-auto mt-4 sm:mt-6 max-w-2xl text-[15px] sm:text-[17px] font-light leading-relaxed text-white/60">
               {description}
             </p>
             
-            <div className="mt-12 flex flex-col justify-center gap-5 sm:flex-row w-full sm:w-auto">
+            <div className="mt-8 sm:mt-12 flex flex-col justify-center gap-4 sm:gap-5 sm:flex-row w-full sm:w-auto">
               <Link
                 href={primaryCta.href}
                 className="group relative flex h-14 w-full sm:w-auto items-center justify-center gap-3 overflow-hidden rounded-full bg-[#c5a059] px-10 text-[15px] font-bold text-[#05120e] transition-all hover:bg-[#d6b779] hover:scale-[1.02]"

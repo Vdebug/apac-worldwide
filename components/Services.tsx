@@ -41,7 +41,7 @@ export default function Services() {
   };
 
   return (
-    <section id="services" className="relative overflow-hidden bg-[var(--color-bg-base)] py-28 lg:py-36">
+    <section id="services" className="relative overflow-hidden bg-[var(--color-bg-base)] py-16 sm:py-28 lg:py-36">
       {/* Decorative Elements */}
       <div className="absolute left-[-10%] top-[10%] h-[40vw] w-[40vw] rounded-full bg-[#c5a059]/5 blur-[100px]" />
       <div className="absolute right-[-10%] bottom-[10%] h-[40vw] w-[40vw] rounded-full bg-[#11352a]/5 blur-[100px]" />
@@ -56,7 +56,7 @@ export default function Services() {
           <SectionIntro
             eyebrow="What we do"
             title={
-              <span className="font-serif font-light text-[clamp(2.5rem,5vw,4rem)] leading-[1.1] text-charcoal tracking-tight">
+              <span className="font-serif font-light text-[clamp(1.8rem,5vw,4rem)] leading-[1.1] text-charcoal tracking-tight">
                 Architectural Support for <br/><span className="italic text-[#c5a059]">Seamless Launch</span>
               </span>
             }
@@ -70,7 +70,7 @@ export default function Services() {
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, margin: "-100px" }}
-          className="mt-20 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+          className="mt-12 sm:mt-20 grid gap-5 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3"
         >
           {services.map((service, index) => {
             const Icon = icons[service.slug] || Building2;
@@ -79,7 +79,7 @@ export default function Services() {
                 key={service.slug}
                 variants={item}
                 whileHover={{ y: -8, transition: { duration: 0.4, ease: "easeOut" } }}
-                className="group relative overflow-hidden rounded-[24px] border border-neutral-200/60 bg-white/60 p-10 backdrop-blur-xl shadow-sm transition-shadow hover:shadow-xl hover:shadow-[#11352a]/5"
+                className="group relative overflow-hidden rounded-[20px] sm:rounded-[24px] border border-neutral-200/60 bg-white/60 p-6 sm:p-10 backdrop-blur-xl shadow-sm transition-shadow hover:shadow-xl hover:shadow-[#11352a]/5"
               >
                 {/* Accent Line on hover */}
                 <div className="absolute left-0 top-0 h-1 w-0 bg-[#c5a059] transition-all duration-500 ease-out group-hover:w-full" />

@@ -25,7 +25,7 @@ export default function About() {
   };
 
   return (
-    <section id="about" className="relative overflow-hidden bg-white py-28 lg:py-36">
+    <section id="about" className="relative overflow-hidden bg-white py-16 sm:py-28 lg:py-36">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           
@@ -39,14 +39,14 @@ export default function About() {
             <SectionIntro
               eyebrow="Why APAC"
               title={
-                <span className="font-serif font-light text-[clamp(2.5rem,5vw,3.5rem)] leading-[1.05] text-[#151515] tracking-tight">
+                <span className="font-serif font-light text-[clamp(1.8rem,5vw,3.5rem)] leading-[1.1] text-[#151515] tracking-tight">
                   Practical setup for founders who demand <span className="italic text-[#c5a059]">Velocity</span>
                 </span>
               }
               description="We help elite founders move from idea to operating company with authoritative planning, meticulous document work, and compliance that never slows you down."
             />
             
-            <div className="mt-8 space-y-6 text-[16px] leading-relaxed text-[#52525b] font-light">
+            <div className="mt-6 sm:mt-8 space-y-4 sm:space-y-6 text-[15px] sm:text-[16px] leading-relaxed text-[#52525b] font-light">
               <p>
                 APAC Worldwide was engineered for leaders who need more than a simple filing service. We synchronize formation, immigration, tax systems, and continuous operating support so the launch stays commercially useful.
               </p>

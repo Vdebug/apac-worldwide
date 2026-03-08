@@ -103,14 +103,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <>
       <StructuredData data={[articleSchema, faqSchema]} />
       <Navbar />
-      <section className="relative overflow-hidden bg-white px-6 pb-16 pt-32 lg:px-8 lg:pb-20 lg:pt-36">
+      <section className="relative overflow-hidden bg-white px-4 pb-12 pt-24 sm:px-6 sm:pb-16 sm:pt-32 lg:px-8 lg:pb-20 lg:pt-36">
         <div className="absolute right-0 top-0 h-72 w-72 rounded-full bg-teal/[0.05]" />
         <div className="mx-auto max-w-7xl">
           <Reveal className="max-w-3xl">
             <div className="inline-flex rounded-full border border-teal/10 bg-teal/[0.06] px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-teal">
               {post.category}
             </div>
-            <h1 className="mt-6 font-serif text-[clamp(2.7rem,5vw,4.8rem)] font-medium leading-[1.06] tracking-tight text-charcoal">
+            <h1 className="mt-4 sm:mt-6 font-serif text-[clamp(1.8rem,5vw,4.8rem)] font-medium leading-[1.1] tracking-tight text-charcoal">
               {post.title}
             </h1>
             <p className="mt-6 max-w-2xl text-base leading-relaxed text-neutral-500 sm:text-lg">
@@ -128,7 +128,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             </div>
           </Reveal>
 
-          <Reveal delayClass="stagger-1" className="mt-12 overflow-hidden rounded-[34px] border border-neutral-100">
+          <Reveal delayClass="stagger-1" className="mt-8 sm:mt-12 overflow-hidden rounded-[20px] sm:rounded-[34px] border border-neutral-100">
             <div className="relative aspect-[16/9]">
               <Image
                 src={post.image}
@@ -143,9 +143,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       <section className="bg-white pb-10">
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 lg:grid-cols-[0.72fr_0.28fr] lg:px-8">
+        <div className="mx-auto grid max-w-7xl gap-8 sm:gap-12 px-4 sm:px-6 lg:grid-cols-[0.72fr_0.28fr] lg:px-8">
           <div>
-            <Reveal className="rounded-[28px] border border-neutral-100 bg-neutral-50 p-8">
+            <Reveal className="rounded-[20px] sm:rounded-[28px] border border-neutral-100 bg-neutral-50 p-5 sm:p-8">
               <div className="text-xs font-semibold uppercase tracking-[0.16em] text-gold">
                 Key takeaways
               </div>
