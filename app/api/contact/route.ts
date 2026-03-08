@@ -86,15 +86,15 @@ function buildConfirmationHtml(name: string) {
     <div style="padding:40px">
       <h2 style="margin:0 0 20px;font-size:26px;font-weight:300;color:#ffffff;font-family:Georgia,'Times New Roman',serif">Thank you, ${firstName}</h2>
       <p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:rgba(255,255,255,0.7);font-weight:300">
-        We have received your consultation request successfully. One of our advisors will review your requirements and get back to you within <strong style="color:#ffffff">one business day</strong>.
+        We have successfully received your submission.
       </p>
       <p style="margin:0 0 16px;font-size:15px;line-height:1.7;color:rgba(255,255,255,0.7);font-weight:300">
-        All future communication will come from this email address — <strong style="color:#c5a059">info@apacworldwide.com</strong>. Please save this contact to ensure our messages reach your inbox.
+        This is the proper communication channel that you can use moving forward. If you have any queries, you can reach out to us here directly by replying to this email, and we will be reaching out to you as soon as possible.
       </p>
       <div style="margin:28px 0;padding:20px 24px;background:rgba(197,160,89,0.06);border:1px solid rgba(197,160,89,0.15);border-radius:12px">
         <p style="margin:0;font-size:13px;line-height:1.6;color:rgba(255,255,255,0.6)">
-          <strong style="color:#c5a059">What happens next?</strong><br>
-          Our team will study your requirements, prepare a tailored recommendation, and schedule a discovery call at a time that works for you.
+          <strong style="color:#c5a059">Rest assured:</strong><br>
+          We are reviewing your requirements and our team will contact you shortly to schedule a consultation.
         </p>
       </div>
       <p style="margin:24px 0 0;font-size:15px;line-height:1.7;color:rgba(255,255,255,0.7);font-weight:300">

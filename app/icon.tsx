@@ -22,19 +22,20 @@ export default function Icon() {
           borderRadius: '8px',
         }}
       >
-        <svg
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="#c5a059"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
+        <div
+          style={{
+            fontSize: 16,
+            fontWeight: 700,
+            fontFamily: 'serif',
+            color: '#c5a059',
+            letterSpacing: '-1px',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
         >
-          <path d="M12 2L2 22h20L12 2z" />
-          <path d="M12 2v20" />
-        </svg>
+          AW
+        </div>
       </div>
     ),
     {
